@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Anchor
+  - Fuel Cannister
   layers:
   - Default
   - TransparentFX
