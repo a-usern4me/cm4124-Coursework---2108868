@@ -24,9 +24,9 @@ public class ArmCannon : MonoBehaviour {
     public void spawn(){
         //if (sp != null) Destroy(sp);
         if (triggerValue != triggerInputActionReference.action.ReadValue<float>()){
-            sp = Instantiate(what, cannon.transform.position + (transform.forward * 1) + (transform.up * 0), Quaternion.identity);
+            sp = Instantiate(what, cannon.transform.position + (transform.forward * 0.4f) + (transform.up * 0.1f), Quaternion.identity);
 			    body = sp.AddComponent (typeof (Rigidbody)) as Rigidbody;
-			    body.AddForce(transform.forward.normalized * 10000);
+			    body.AddRelativeForce(cannon.transform.forward.normalized * 10000);
         }
     }
 }

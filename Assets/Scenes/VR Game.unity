@@ -11245,6 +11245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_box_v1_LD2square
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010619805496, guid: 395dcd74773407e4faa9906eedf6f75d, type: 3}
+      propertyPath: m_TagString
+      value: Crates
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010570413510, guid: 395dcd74773407e4faa9906eedf6f75d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.00039273986
@@ -11711,6 +11715,10 @@ PrefabInstance:
     - target: {fileID: 1000013580012832, guid: a50af88759b02d74b8328377b33ab3e8, type: 3}
       propertyPath: m_Name
       value: Wooden_box_v1_LD2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013580012832, guid: a50af88759b02d74b8328377b33ab3e8, type: 3}
+      propertyPath: m_TagString
+      value: Crates
       objectReference: {fileID: 0}
     - target: {fileID: 4000012348412654, guid: a50af88759b02d74b8328377b33ab3e8, type: 3}
       propertyPath: m_LocalScale.x
@@ -13109,6 +13117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deposit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4092401845392503614, guid: 8932670ecdb748e4eafa784083251d7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5346846644802049622, guid: 8932670ecdb748e4eafa784083251d7d, type: 3}
       propertyPath: blowtorch
       value: 
@@ -13989,7 +14001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9126102099317883263, guid: 7939a471751544f488960cfdb4849bbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.41
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 9126102099317883263, guid: 7939a471751544f488960cfdb4849bbc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13997,7 +14009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9126102099317883263, guid: 7939a471751544f488960cfdb4849bbc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.729
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 9126102099317883263, guid: 7939a471751544f488960cfdb4849bbc, type: 3}
       propertyPath: m_LocalRotation.w
