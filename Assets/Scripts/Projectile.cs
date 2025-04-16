@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+public class Projectile : MonoBehaviour {
+    public Rigidbody cannon;
+    
+    void Start(){
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+    
         
+    }
+
+    void OnCollisionEnter(Collision Collider){
+        if (Collider.gameObject.tag == "Ground"){
+            Destroy(this.gameObject);
+        }
+
+        if (Collider.gameObject.tag == "Crates"){
+            Destroy(this.gameObject);
+            Destroy(Collider.gameObject);
+        }
     }
 }

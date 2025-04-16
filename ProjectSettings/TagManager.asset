@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Anchor
   - Fuel Cannister
+  - Ground
+  - Crates
+  - Pipes
+  - Blowtorch
+  - Cannon
   layers:
   - Default
   - TransparentFX
