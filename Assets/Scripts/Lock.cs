@@ -7,6 +7,8 @@ public class Lock : MonoBehaviour {
     [SerializeField] GameObject cannister;
     [SerializeField] GameObject blowtorch;
     private bool empty;
+    public AudioSource Audio;
+    public AudioClip activated;
   
     void Start(){
         empty = true;
@@ -31,6 +33,8 @@ public class Lock : MonoBehaviour {
         blowtorch.GetComponent<Rigidbody>().isKinematic = false;
         blowtorch.GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Activated!");
+        Audio.clip = activated;
+        Audio.Play();
 
     }
 }

@@ -7,6 +7,8 @@ public class CannonLaunch : MonoBehaviour {
     public GameObject what;
     private bool fixedNow = false;
     private bool firing = false;
+     public AudioSource Audio;
+    public AudioClip activated;
 
     void Start(){
       
@@ -35,6 +37,9 @@ public class CannonLaunch : MonoBehaviour {
         if (collider.gameObject.tag == "Blowtorch" && fixedNow == false){
             //MendLever();
             fixedNow = true;
+            Audio.clip = activated;
+            Audio.Play();
+
         }
 
     }
