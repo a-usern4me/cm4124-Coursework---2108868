@@ -19,6 +19,10 @@ public class Projectile : MonoBehaviour {
             Destroy(this.gameObject);
         }
 
+        if (Collider.gameObject.tag == "Player"){
+            Destroy(this.gameObject);
+        }
+
         if (Collider.gameObject.tag == "Crates"){
             Destroy(this.gameObject);
             Destroy(Collider.gameObject);

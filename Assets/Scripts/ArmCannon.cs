@@ -26,7 +26,7 @@ public class ArmCannon : MonoBehaviour {
         if (triggerValue != triggerInputActionReference.action.ReadValue<float>()){
             sp = Instantiate(what, cannon.transform.position + (transform.forward * 0.4f) + (transform.up * 0.1f), Quaternion.identity);
 			    body = sp.AddComponent (typeof (Rigidbody)) as Rigidbody;
-			    body.AddRelativeForce(cannon.transform.forward.normalized * 10000);
+			    body.AddRelativeForce(cannon.transform.forward.normalized * 15000);
         }
     }
 }
