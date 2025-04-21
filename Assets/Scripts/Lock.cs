@@ -14,7 +14,6 @@ public class Lock : MonoBehaviour {
         empty = true;
         blowtorch.GetComponent<Rigidbody>().isKinematic = true;
         blowtorch.GetComponent<BoxCollider>().enabled = false;
-        
     }
 
     void Update(){
@@ -24,17 +23,14 @@ public class Lock : MonoBehaviour {
     private void OnTriggerEnter(Collider collider){
         if (collider.tag == "Fuel Cannister" && empty == true){
             Refuel();
-
         }
-
     }
 
     private void Refuel(){
         blowtorch.GetComponent<Rigidbody>().isKinematic = false;
         blowtorch.GetComponent<BoxCollider>().enabled = true;
-        Debug.Log("Activated!");
+        //Debug.Log("Activated!");
         Audio.clip = activated;
         Audio.Play();
-
     }
 }

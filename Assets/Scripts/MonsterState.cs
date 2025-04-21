@@ -13,8 +13,7 @@ public class MonsterState : MonoBehaviour {
 
     void Update(){
         if (hit == true){
-            Debug.Log("Working");
-            //anim.Play("die");
+            //Debug.Log("Working");
             anim.SetBool("Defeated", true);
         } 
     }
@@ -22,7 +21,7 @@ public class MonsterState : MonoBehaviour {
     private void OnCollisionEnter(Collision collider){
         if (collider.gameObject.tag == "CannonRound"){
             hit = true;
-            Debug.Log("Hit!");
+            //Debug.Log("Hit!");
             Destroy(collider.gameObject);
         }
     }

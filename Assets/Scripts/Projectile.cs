@@ -11,7 +11,6 @@ public class Projectile : MonoBehaviour {
 
     void Update(){
     
-        
     }
 
     void OnCollisionEnter(Collision Collider){
