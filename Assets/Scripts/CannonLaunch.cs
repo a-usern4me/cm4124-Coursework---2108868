@@ -36,6 +36,7 @@ public class CannonLaunch : MonoBehaviour {
     private void OnCollisionEnter(Collision collider){
         if (collider.gameObject.tag == "Blowtorch" && fixedNow == false){
             //MendLever();
+            Debug.Log("Fire");
             fixedNow = true;
             Audio.clip = activated;
             Audio.Play();

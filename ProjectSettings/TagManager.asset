@@ -11,6 +11,7 @@ TagManager:
   - Pipes
   - Blowtorch
   - Cannon
+  - CannonRound
   layers:
   - Default
   - TransparentFX
