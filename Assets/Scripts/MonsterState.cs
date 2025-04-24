@@ -6,7 +6,9 @@ public class MonsterState : MonoBehaviour {
     public GameObject monster;
     public Animator anim;
     public bool hit = false;
-   
+    public AudioSource Audio;
+    public AudioClip death;
+
     void Start(){
       
     }
@@ -23,6 +25,7 @@ public class MonsterState : MonoBehaviour {
             hit = true;
             //Debug.Log("Hit!");
             Destroy(collider.gameObject);
+          
         }
     }
 }

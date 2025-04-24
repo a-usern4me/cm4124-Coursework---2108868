@@ -8,8 +8,8 @@ public class CannonLaunch : MonoBehaviour {
     private bool fixedNow = false;
     private bool firing = false;
     public AudioSource Audio;
-    public AudioClip activated;
-
+    public AudioClip shelling;
+    
     void Start(){
       
     }
@@ -23,7 +23,9 @@ public class CannonLaunch : MonoBehaviour {
             sp = Instantiate(shell, brotherRay.transform.position + (transform.forward * 3f) + (transform.up * 0f), Quaternion.identity);
 			body = sp.AddComponent (typeof (Rigidbody)) as Rigidbody;
 			body.AddRelativeForce(brotherRay.transform.forward.normalized * 3000);
-
+            Audio.clip = shelling;
+            Audio.Play();
+           
         } else {
             //Debug.Log("Broken!");
         }
@@ -34,8 +36,7 @@ public class CannonLaunch : MonoBehaviour {
         if (collider.gameObject.tag == "Blowtorch" && fixedNow == false){
             //Debug.Log("Fire");
             fixedNow = true;
-            Audio.clip = activated;
-            Audio.Play();
+            
         }
     }
 }
