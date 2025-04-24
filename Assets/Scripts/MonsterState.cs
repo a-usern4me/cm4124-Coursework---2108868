@@ -23,6 +23,8 @@ public class MonsterState : MonoBehaviour {
     private void OnCollisionEnter(Collision collider){
         if (collider.gameObject.tag == "CannonRound"){
             hit = true;
+            Audio.clip = death;
+            Audio.Play();
             //Debug.Log("Hit!");
             Destroy(collider.gameObject);
           

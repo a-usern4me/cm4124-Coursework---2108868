@@ -12,6 +12,7 @@ TagManager:
   - Blowtorch
   - Cannon
   - CannonRound
+  - Container
   layers:
   - Default
   - TransparentFX
